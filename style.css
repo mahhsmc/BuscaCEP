@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+
+body {
+    background-color: #fbc6e8;
+}
+
+/* Altera o estilo do título (elemnto HTML "h1") */
+h1 {
+    font-family: "BBH Sans Hegarty";
+    color: deeppink;
+}
+
+.row {
+    color: #720048;
+    
+} 
+
+input[type="text"]:focus {
+    border-color: #d32e97;
+    box-shadow: 0 1px 0 1px RGB(250, 152, 201) inset, 0 0 8px #d32e97;
+    outline: 0 none;
+}
+
+input[type="number"]:focus {
+      border-color: #d32e97;
+    box-shadow: 0 1px 0 1px RGB(250, 152, 201) inset, 0 0 8px #d32e97;
+    outline: 0 none;
+}
+
+input[type="text"] {
+
+    background-color: #e779bd;
+    border-color:  #d60087;
+
+}
+
+    input[type="number"] {
+        background-color:  #e779bd;
+        border-color:  #d60087;
+    }
+
+#loadingOverlay {
+    /* As linhas abaixo garantem que o elemento ocupe 100% do espaço da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Fundo branco semi-transparente */
+    background-color: rgba(228, 129, 167, 0.5);
+    /* Posiciona o spiner acima de todos os outros elementos HTML */
+    z-index: 9999;
+    }
+
+    .spinner-border {
+        /* Aumenta o tamanho do spinner */
+        width: 100px;
+        height: 100px;
+    }
