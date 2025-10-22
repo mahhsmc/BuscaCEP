@@ -22,22 +22,35 @@ input[type="text"]:focus {
 }
 
 input[type="number"]:focus {
-      border-color: #d32e97;
+    border-color: #d32e97;
     box-shadow: 0 1px 0 1px RGB(250, 152, 201) inset, 0 0 8px #d32e97;
     outline: 0 none;
 }
 
-input[type="text"] {
-
+input[type="text"]
+{    
     background-color: #e779bd;
     border-color:  #d60087;
-
+    color: whitesmoke;
 }
 
-    input[type="number"] {
-        background-color:  #e779bd;
-        border-color:  #d60087;
-    }
+select {
+    background-color:  #e779bd !important;
+    border-color:  #d60087 !important;
+    color: whitesmoke !important;
+}
+
+input[type="text"]::placeholder {
+    color: #cc0984;
+}
+
+
+input[type="text"]:disabled, select:disabled
+{    
+    background-color: #e779bd !important;
+    border-color:  #d60087 !important;
+    color: whitesmoke !important;
+}
 
 #loadingOverlay {
     /* As linhas abaixo garantem que o elemento ocupe 100% do espaço da tela */
@@ -50,10 +63,10 @@ input[type="text"] {
     background-color: rgba(228, 129, 167, 0.5);
     /* Posiciona o spiner acima de todos os outros elementos HTML */
     z-index: 9999;
-    }
+}
 
-    .spinner-border {
-        /* Aumenta o tamanho do spinner */
-        width: 100px;
-        height: 100px;
-    }
+.spinner-border {
+    /* Aumenta o tamanho do spinner */
+    width: 100px;
+    height: 100px;
+}
